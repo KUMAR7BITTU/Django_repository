@@ -22,6 +22,10 @@ urlpatterns = [
     path('admin-panel/', admin.site.urls),
     path('about-us/',views.aboutus),
     path('course/',views.course),
+    path('courseInt/<int:course_id>',views.courseInt),
+    path('courseStr/<str:statement1>',views.courseStr),
+    path('courseSlug/<slug:statement2>',views.courseSlug),
+    path('course_data/<item>',views.course_data),
 ]
 
 # site is class and urls is a function in site class .
