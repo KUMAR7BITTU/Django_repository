@@ -2,7 +2,12 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def Home(request):
-    return render(request,"index.html")
+    data = {
+        "title" : "Home New",
+        "bdata" : "Welcome to PARADIP",
+        "clist" : ['PHP', 'JAVA', 'DJANGO']
+        }
+    return render(request,"index.html",data)
 
 def aboutus(request):
     return HttpResponse(" <b> Welcome to my site </b>")
