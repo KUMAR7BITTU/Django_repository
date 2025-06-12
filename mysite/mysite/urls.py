@@ -26,7 +26,12 @@ urlpatterns = [
     path('courseStr/<str:statement1>',views.courseStr),
     path('courseSlug/<slug:statement2>',views.courseSlug),
     path('course_data/<item>',views.course_data),
-    path('',views.Home)
+    path('',views.Home),
+    path('homepage/',views.homepage),
+    path('courseInt2/<int:course_id2>',views.courseInt2),
+    path('courseStr2/<str:statement3>',views.courseStr2),
+    path('courseSlug2/<slug:statement4>',views.courseSlug2),
+    path('course_data2/<statement>',views.course_data2)
 ]
 
 # site is class and urls is a function in site class .
